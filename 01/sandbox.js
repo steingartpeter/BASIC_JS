@@ -35,3 +35,15 @@ console.log('Show ID:'+p.idCard.show());
 // Functions
 // - FUNCTION DECLARATION
 // - FUNCTION EXPRESSION
+// - - parameters,params+def.values
+// - - return values
+// - ARROW FUNCTION
+// - - const greet = () => 'Hello WOrld!';
+// - - const bill = (products, tax) => {
+// - -     let total = 0;
+// - -     for(let i=0; i<produts.length;i++){
+// - -          total += products[i] + products[i]*tax;
+// - -     }
+// - - }
+// - CALLBACKS/FOREACH
+
