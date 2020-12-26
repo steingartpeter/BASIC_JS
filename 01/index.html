@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    	.console-emu{
+    		min-width:600px;
+    		min-height:450px;
+    		padding:15px;
+    		background-color:#054040;
+    		color:#EDEDFF;
+    	}
+    	code{
+    		background-color:#010101;
+    		color:#FEFE00;
+    		display:block;
+    		margin:3px;
+    		padding:3px;
+    		border:3px #CDCDCD solid;
+    		box-shadow:2px 2px 4px #050505;
+    	}
+    </style>
 </head>
 <body>
     <h1>TESZTSITE 001</h1>
-
+	<div class="console-emu">
+		A szintaxis az importhoz a console-ban így működik:<br>
+		Egy PROMISE-al beimportáljuk a module-t, MODUL-ként.<br>
+		<code>let PERSON = await import ('root/from/localhots/to/JSFile.js')</code><br>
+		Ezután ezt a ha ez a module objektumot/függvényt exportál akkor egyből használhatóak azok.<br>
+		Ha azonban ez egy osztályt exportál, akkor használni kell a module DEFAULT elemét, a class eléréséhez:<br>
+		<code>let p1 = new Person.default()</code><br>
+		Ez a sor valójában a constructort hívje meg, és ezután használható lesz a p1 ben a Person osztály minden eleme.<br>
+		Pl.:<br>
+		<code>p1.wrtId()</code><br>
+		Eredmény:<br>
+		<code>
+		======================================<br>
+		My name is: John Smith<br>
+		My age is: 0<br>
+		My id card: 063065547<br>
+		======================================<br>
+		</code>
+	</div>
     <script type="module" src="sandbox.js"></script>
 </body>
 </html>

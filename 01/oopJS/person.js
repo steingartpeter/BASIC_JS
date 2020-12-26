@@ -32,6 +32,14 @@ export default class Person{
     setAge = function(a){
         this.age = a;
     }
+    wrtId = function(){
+    	let msg = `======================================\n`;
+    	msg += `My name is: ${this.name}\n`;
+	    msg += `My age is: ${this.age}\n`;
+	    msg += `My id card: ${this.idCard.cardId}\n`;
+	    msg += `======================================\n`;
+	    console.log(msg);
+    }
 
 }
 
